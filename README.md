@@ -19,7 +19,6 @@ php artisan vendor:publish --tag=mailreacher-config
 ```env
 MAIL_MAILER=mailreacher
 MAILREACHER_API_KEY=mr_live_xxx
-MAILREACHER_BASE_URL=https://mail-reacher.com
 MAIL_FROM_ADDRESS=noreply@example.com
 MAIL_FROM_NAME="Your App"
 ```

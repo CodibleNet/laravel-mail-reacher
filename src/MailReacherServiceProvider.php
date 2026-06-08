@@ -13,10 +13,7 @@ class MailReacherServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/mailreacher.php', 'mailreacher');
 
         $this->app->singleton(Client::class, function (): Client {
-            return new Client(
-                apiKey: (string) config('mailreacher.api_key'),
-                baseUrl: (string) config('mailreacher.base_url', 'https://mail-reacher.com'),
-            );
+            return new Client(apiKey: (string) config('mailreacher.api_key'));
         });
     }
 
