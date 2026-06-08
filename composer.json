@@ -1,0 +1,47 @@
+{
+    "name": "codiblenet/laravel-mail-reacher",
+    "description": "Laravel mail transport for Mail Reacher.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MailReacher\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MailReacher\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../mail-reacher-php",
+            "options": { "symlink": true }
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "codiblenet/mail-reacher-php": "*",
+        "illuminate/mail": "^10.0 || ^11.0 || ^12.0 || ^13.0",
+        "illuminate/support": "^10.0 || ^11.0 || ^12.0 || ^13.0",
+        "symfony/mailer": "^6.4 || ^7.0"
+    },
+    "require-dev": {
+        "guzzlehttp/psr7": "^2.6",
+        "orchestra/testbench": "^8.0 || ^9.0 || ^10.0 || ^11.0",
+        "phpunit/phpunit": "^10.5 || ^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MailReacher\\Laravel\\MailReacherServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

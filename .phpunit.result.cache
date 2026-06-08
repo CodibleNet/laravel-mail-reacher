@@ -1,0 +1,1 @@
+{"version":2,"defects":{"MailReacher\\Laravel\\Tests\\MailReacherTransportTest::test_it_maps_a_symfony_email_to_mail_reacher_payload":8},"times":{"MailReacher\\Laravel\\Tests\\MailReacherTransportTest::test_it_maps_a_symfony_email_to_mail_reacher_payload":0.005}}
