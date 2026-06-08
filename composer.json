@@ -13,13 +13,6 @@
             "MailReacher\\Laravel\\Tests\\": "tests/"
         }
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../mail-reacher-php",
-            "options": { "symlink": true }
-        }
-    ],
     "require": {
         "php": "^8.1",
         "codiblenet/mail-reacher-php": "*",
