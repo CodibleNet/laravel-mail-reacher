@@ -1,6 +1,6 @@
 {
     "name": "codiblenet/laravel-mail-reacher",
-    "description": "Laravel mail transport for Mail Reacher.",
+    "description": "Official Laravel mail transport for Mail Reacher.",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -15,7 +15,7 @@
     },
     "require": {
         "php": "^8.1",
-        "codiblenet/mail-reacher-php": "*",
+        "codiblenet/mail-reacher-php": "^0.1",
         "illuminate/mail": "^10.0 || ^11.0 || ^12.0 || ^13.0",
         "illuminate/support": "^10.0 || ^11.0 || ^12.0 || ^13.0",
         "symfony/mailer": "^6.4 || ^7.0"
@@ -35,6 +35,19 @@
     "scripts": {
         "test": "phpunit"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "keywords": [
+        "mail-reacher",
+        "laravel",
+        "email",
+        "transactional-email",
+        "mailer",
+        "transport"
+    ],
+    "homepage": "https://mail-reacher.com/docs",
+    "support": {
+        "issues": "https://github.com/CodibleNet/laravel-mail-reacher/issues",
+        "source": "https://github.com/CodibleNet/laravel-mail-reacher"
+    }
 }
