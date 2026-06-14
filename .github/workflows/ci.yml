@@ -27,7 +27,7 @@ jobs:
       - run: composer config repositories.mail-reacher-php vcs https://github.com/CodibleNet/mail-reacher-php
       - run: composer config minimum-stability dev
       - run: composer config prefer-stable true
-      - run: composer require --no-interaction --no-update illuminate/mail:${{ matrix.laravel }} illuminate/support:${{ matrix.laravel }}
+      - run: composer require --no-interaction --no-update codiblenet/mail-reacher-php:"dev-main as 0.1.0" illuminate/mail:${{ matrix.laravel }} illuminate/support:${{ matrix.laravel }}
       - uses: ramsey/composer-install@v3
       - run: composer validate --strict --no-check-lock
       - run: composer test
